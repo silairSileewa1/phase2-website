@@ -1,0 +1,38 @@
+<!-- Video Source -->
+  <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
+  <section class="showcase">
+    <header>
+        <link rel="stylesheet" href="css/cssStyleSheets.css">
+      <h2 class="logo"><a href="../index.html"></a> plzDontHackMe</h2>
+      <div class="toggle"></div>
+    </header>
+    <video src="video/pexels-vlada-karpovich-8045150.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>Manage your Passwords </h2> 
+      <h3>Keep your Data Secure</h3>
+      <p>Our mission is to make account security accesible and easy. Keep your data out of hackers hands, by keeping your password in ours.</p>
+      <a href="./html/signIn.html">Sign in</a>
+    </div>
+    <ul class="social">
+      <li><a href="https://www.facebook.com/"target="_blank"><img src="https://i.ibb.co/x7P24fL/facebook.png" alt="facebook logo"></a></li>
+      <li><a href="https://twitter.com/?lang=en"target="_blank"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png" alt="twitter logo"></a></li>
+      <li><a href="https://www.instagram.com/"target="_blank"><img src="https://i.ibb.co/ySwtH4B/instagram.png" alt="instagram logo"></a></li>
+    </ul>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="./html/accountCreation.html">Create an Account</a></li>
+      <li><a href="./html/signIn.html">Sign in</a></li>
+      <li><a href="./html/managePasswords.html">Manage my Passwords</a></li>
+    </ul>
+  </div>
+  <script>
+      const menuToggle = document.querySelector('.toggle');
+const showcase = document.querySelector('.showcase');
+
+menuToggle.addEventListener('click', () => {
+  menuToggle.classList.toggle('active');
+  showcase.classList.toggle('active');
+})
+  </script>
